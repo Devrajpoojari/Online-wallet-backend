@@ -2,6 +2,7 @@ package com.wallet.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,28 +16,33 @@ import com.wallet.repository.UserDetetailsRepo;
 
 @Service
 public class UserDetailsServiceImple implements UserDetailsService {
+
 	@Autowired
-	private UserDetetailsRepo detetailsRepo;
+	private UserDetetailsRepo detetailsRepo; // Interface DI
 
 	@Autowired
 	private TransactionsRepo transactionsRepo;
 
 	@Override
-	public UserDetails registerUser(UserDetails details) {
+	public UserDetails registerUser(UserDetails details) throws Exception {
+
+		UserDetails obj = detetailsRepo.getUserByEmail(details.getEmailId());
+		if (obj != null) {
+			throw new Exception("User Already exist");
+		}
 
 		details.setAccountNumber((long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L);
-		System.out.println(details);
+
 		return detetailsRepo.save(details);
 	}
 
 	@Override
 	public UserDetails autheticateUser(String userName, String password) throws ResourceNotFoundException {
 
-		List<UserDetails> list = detetailsRepo.findAll();
-		for (UserDetails u : list) {
-			if (u.getEmailId().equalsIgnoreCase(userName) && u.getPassword().equalsIgnoreCase(password)) {
-				return u;
-			}
+		UserDetails u = detetailsRepo.getUserByUserName(userName);
+		System.out.println(u);
+		if (u.getFirstName().equalsIgnoreCase(userName) && u.getPassword().equalsIgnoreCase(password)) {
+			return u;
 		}
 		throw new ResourceNotFoundException("Invalid credentails");
 
@@ -46,11 +52,9 @@ public class UserDetailsServiceImple implements UserDetailsService {
 	public String resetPasswordByEmail(String email, Long accountNumber, String newpassword)
 			throws ResourceNotFoundException {
 		UserDetails u = detetailsRepo.getUserDetalsByAccountNumber(accountNumber)
-				.orElseThrow(() -> new ResourceNotFoundException("User Details Not Found "));
+				.orElseThrow(() -> new ResourceNotFoundException("User Details Not Found"));
 		if (u.getEmailId().equalsIgnoreCase(email)) {
 			u.setPassword(newpassword);
-			detetailsRepo.delete(u);
-
 		}
 		detetailsRepo.save(u);
 		return "Password Updated Successfully";
@@ -66,10 +70,9 @@ public class UserDetailsServiceImple implements UserDetailsService {
 	public UserDetails withdrawMoney(float amount, Long userId) throws Exception {
 		UserDetails u = detetailsRepo.findById(userId)
 				.orElseThrow(() -> new ResourceNotFoundException("User Doesn't exists by Id :" + userId));
-		if (amount > 100 && amount < 100000) {
-			TransactionDetails details = new TransactionDetails(
-					(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L, LocalDateTime.now().toString(),
-					"WithDrawing amount of :" + userId, amount, TransactionMode.WITHDRAW);
+		if (amount >= 100 && amount <= 100000) {
+			TransactionDetails details = new TransactionDetails(u.getAccountNumber(), LocalDateTime.now().toString(),
+					"WithDrawing amount of :" + u.getFirstName(), amount, TransactionMode.WITHDRAW);
 
 			List<TransactionDetails> tr = u.getTransationDetils();
 			tr.add(details);
@@ -91,9 +94,8 @@ public class UserDetailsServiceImple implements UserDetailsService {
 
 		UserDetails u = detetailsRepo.findById(userId)
 				.orElseThrow(() -> new ResourceNotFoundException("User Doesn't exists by Id :" + userId));
-		if (amount > 100 && amount < 100000) {
-			TransactionDetails details = new TransactionDetails(
-					(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L, LocalDateTime.now().toString(),
+		if (amount >= 100 && amount <= 100000) {
+			TransactionDetails details = new TransactionDetails(u.getAccountNumber(), LocalDateTime.now().toString(),
 					"Depositing amount to : " + u.getFirstName(), amount, TransactionMode.DEPOSITE);
 
 			List<TransactionDetails> tr = u.getTransationDetils();
@@ -115,41 +117,9 @@ public class UserDetailsServiceImple implements UserDetailsService {
 		UserDetails u2 = detetailsRepo.getUserDetalsByAccountNumber(recieverAccountNumber)
 				.orElseThrow(() -> new ResourceNotFoundException("Reciever Account Doesn't exists"));
 
-//		if (amount <= 100000 && amount >= 100 ) {
-//			if (u1.getBalence() > amount) {
-//				u2.setBalence(amount + u2.getBalence());
-//				u1.setBalence(u1.getBalence() - amount);
-//
-//				TransactionDetails details1 = new TransactionDetails(
-//						(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L,
-//						LocalDateTime.now().toString(),
-//						"Transfering amount from:" + senderAccountNumber + " to " + recieverAccountNumber, amount,
-//						TransactionMode.TRANSFER);
-//
-//				TransactionDetails details2 = new TransactionDetails(
-//						(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L,
-//						LocalDateTime.now().toString(), "Recieved amount from:" + senderAccountNumber, amount,
-//						TransactionMode.TRANSFER);
-//				
-//				List<TransactionDetails> list1 = u1.getTransationDetils();
-//				list1.add(details1);
-//				u1.setTransationDetils(list1);
-//
-//				List<TransactionDetails> lis2 = u2.getTransationDetils();
-//				lis2.add(details2);
-//				u2.setTransationDetils(lis2);
-//				detetailsRepo.save(u1);
-//				detetailsRepo.save(u2);
-//
-//			} else {
-//				throw new Exception("insufficient balance In Sender Account");
-//			}
-//		}
-
-		if (amount > 100 && amount < 100000) {
-			TransactionDetails details = new TransactionDetails(
-					(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L, LocalDateTime.now().toString(),
-					"Transfering amount to :" + u2.getAccountNumber(), amount, TransactionMode.TRANSFER);
+		if (amount >= 100 && amount <= 100000) {
+			TransactionDetails details = new TransactionDetails(u.getAccountNumber(), LocalDateTime.now().toString(),
+					"Transfering amount to :" + u2.getFirstName(), amount, TransactionMode.TRANSFER);
 
 			List<TransactionDetails> tr = u.getTransationDetils();
 			tr.add(details);
@@ -163,9 +133,8 @@ public class UserDetailsServiceImple implements UserDetailsService {
 			u.setTransationDetils(tr);
 			detetailsRepo.save(u);
 		}
-		if (amount > 100 && amount < 100000) {
-			TransactionDetails details = new TransactionDetails(
-					(long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L, LocalDateTime.now().toString(),
+		if (amount >= 100 && amount <= 100000) {
+			TransactionDetails details = new TransactionDetails(u.getAccountNumber(), LocalDateTime.now().toString(),
 					"Amount Received from : " + u.getFirstName(), amount, TransactionMode.DEPOSITE);
 
 			List<TransactionDetails> tr = u2.getTransationDetils();
@@ -187,4 +156,13 @@ public class UserDetailsServiceImple implements UserDetailsService {
 				.orElseThrow(() -> new ResourceNotFoundException("User Transactions are not present"));
 		return u.getTransationDetils();
 	}
+
+	@Override
+	public List<TransactionDetails> getTransactionsByType(String type, Long id) throws ResourceNotFoundException {
+		UserDetails u = detetailsRepo.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("User Transactions are not present"));
+		return u.getTransationDetils().stream().filter(a -> a.getType().toString().equalsIgnoreCase(type))
+				.collect(Collectors.toList());
+	}
+
 }

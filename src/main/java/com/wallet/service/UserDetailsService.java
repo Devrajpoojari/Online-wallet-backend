@@ -8,7 +8,7 @@ import com.wallet.exceptions.ResourceNotFoundException;
 
 public interface UserDetailsService {
 
-	UserDetails registerUser(UserDetails details);
+	UserDetails registerUser(UserDetails details) throws Exception;
 
 	UserDetails autheticateUser(String userName, String password) throws ResourceNotFoundException;
 
@@ -24,5 +24,7 @@ public interface UserDetailsService {
 			throws ResourceNotFoundException, Exception;
 	
 	List<TransactionDetails> getAllTransactionListById(Long id) throws ResourceNotFoundException;
+	
+	List<TransactionDetails> getTransactionsByType(String type, Long id) throws ResourceNotFoundException;
 
 }

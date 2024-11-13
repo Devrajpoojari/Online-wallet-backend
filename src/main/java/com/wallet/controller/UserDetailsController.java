@@ -1,10 +1,12 @@
 package com.wallet.controller;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Pattern;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,19 +22,20 @@ import com.wallet.service.UserDetailsService;
 @CrossOrigin
 @RestController
 @RequestMapping("/api")
+@Validated
 public class UserDetailsController {
 
 	@Autowired
 	private UserDetailsService userDetailsService;
 
 	@PostMapping("/register")
-	public ResponseEntity<?> register(@Valid @RequestBody UserDetails details) {
+	public ResponseEntity<?> register(@Valid @RequestBody UserDetails details) throws Exception {
 		return new ResponseEntity<>(userDetailsService.registerUser(details), HttpStatus.CREATED);
 	}
 
 	@GetMapping("/login/{userName}/{password}")
-	public ResponseEntity<?> login(@PathVariable String userName, @PathVariable String password)
-			throws ResourceNotFoundException {
+	public ResponseEntity<?> login(@PathVariable String userName,
+			@PathVariable @Pattern(regexp = "^[a-zA-Z0-9]*$",message = "Password should be alhanumeric") String password) throws ResourceNotFoundException {
 		return new ResponseEntity<>(userDetailsService.autheticateUser(userName, password), HttpStatus.ACCEPTED);
 	}
 
