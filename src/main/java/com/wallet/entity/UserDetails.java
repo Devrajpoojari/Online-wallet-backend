@@ -3,12 +3,14 @@ package com.wallet.entity;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -30,9 +32,10 @@ import lombok.NoArgsConstructor;
 public class UserDetails {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long userId;
 
+	@Column(unique = true,updatable = false)
 	private long accountNumber;
 
 	@NotNull(message = "First Name shouldn't be Null")
@@ -49,8 +52,8 @@ public class UserDetails {
 	@Email(message = "Enter Valid Emial address")
 	private String emailId;
 
-	@Size(min = 6, max = 12, message = "Password length should be min : 6 and max : 12")
-	@Pattern(regexp = "^[a-zA-Z0-9]*$", message = "Password should be Alphanumeric")
+//	@Size(min = 6, max = 12, message = "Password length should be min : 6 and max : 12")
+//	@Pattern(regexp = "^[a-zA-Z0-9]*$", message = "Password should be Alphanumeric")
 	private String password;
 
 	@Min(value = 0, message = "The value must be positive")

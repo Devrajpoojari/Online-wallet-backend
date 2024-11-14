@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import com.wallet.controller.UserDetailsController;
 
@@ -23,12 +24,18 @@ public class OnlineWalletApplication {
 //	 ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 		UserDetailsController bean = run.getBean(UserDetailsController.class);
 	}
+
 	@Bean
 	public Docket productApi() {
-		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("com.wallet")).build();
+		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.basePackage("com.wallet"))
+				.build();
 	}
 
 	// http://localhost:8081/swagger-ui.html#/
+
+//	@Bean
+//	public BCryptPasswordEncoder getEncode() {
+//		return new BCryptPasswordEncoder();
+//	}
 
 }

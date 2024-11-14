@@ -1,0 +1,458 @@
+2024-11-14 10:55:39.981  INFO 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 33984 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 10:55:39.982  INFO 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 10:55:40.021  INFO 33984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-14 10:55:40.021  INFO 33984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-14 10:55:40.718  INFO 33984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 10:55:40.765  INFO 33984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-11-14 10:55:41.305  INFO 33984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 10:55:41.313  INFO 33984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 10:55:41.313  INFO 33984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 10:55:41.401  INFO 33984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 10:55:41.401  INFO 33984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1380 ms
+2024-11-14 10:55:41.537  INFO 33984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 10:55:41.576  INFO 33984 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-14 10:55:41.698  INFO 33984 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-14 10:55:41.780  INFO 33984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-14 10:55:41.969  INFO 33984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-14 10:55:41.983  INFO 33984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 10:55:42.951  INFO 33984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 10:55:42.961  INFO 33984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 10:55:43.413  WARN 33984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 10:55:43.861  INFO 33984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 10:55:43.982  INFO 33984 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e2aee60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d91ea11, org.springframework.security.web.context.SecurityContextPersistenceFilter@955b684, org.springframework.security.web.header.HeaderWriterFilter@ec326ec, org.springframework.web.filter.CorsFilter@2d18f8dd, org.springframework.security.web.authentication.logout.LogoutFilter@117920c5, com.wallet.jwt.JwtRequestFilter@264271be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62cd663d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@585f51d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@448b9e3f, org.springframework.security.web.session.SessionManagementFilter@7fd0d985, org.springframework.security.web.access.ExceptionTranslationFilter@44e38514, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35724030]
+2024-11-14 10:55:44.085  INFO 33984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 10:55:44.238  INFO 33984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 10:55:44.240  INFO 33984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 10:55:44.258  INFO 33984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 10:55:44.278  INFO 33984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 10:55:44.402  INFO 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 4.728 seconds (JVM running for 5.511)
+2024-11-14 10:56:37.057  INFO 33984 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 10:56:37.074  INFO 33984 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 10:56:37.078  WARN 33984 --- [Thread-4] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 10:56:37.089  INFO 33984 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 10:56:37.092  INFO 33984 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-14 10:56:37.096  INFO 33984 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-14 10:56:37.187 info 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 33984 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 10:56:37.188 info 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 10:56:37.456 info 33984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 10:56:37.483 info 33984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2024-11-14 10:56:37.636 info 33984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 10:56:37.637 info 33984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 10:56:37.637 info 33984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 10:56:37.675 info 33984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 10:56:37.675 info 33984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 485 ms
+2024-11-14 10:56:37.737 info 33984 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 10:56:37.744 info 33984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-14 10:56:37.858 info 33984 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-14 10:56:37.858 info 33984 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 10:56:37.984 info 33984 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 10:56:37.984 info 33984 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 10:56:38.105 info 33984 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 10:56:38.303 info 33984 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 10:56:38.426 info 33984 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e9dc075, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62c26a3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1476d7ad, org.springframework.security.web.header.HeaderWriterFilter@73057111, org.springframework.web.filter.CorsFilter@23fb55a0, org.springframework.security.web.authentication.logout.LogoutFilter@39a24d5d, com.wallet.jwt.JwtRequestFilter@3db9731e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bc903bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@731c622d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6356e8f4, org.springframework.security.web.session.SessionManagementFilter@73337191, org.springframework.security.web.access.ExceptionTranslationFilter@bf68ed9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@358eac7f]
+2024-11-14 10:56:38.506 info 33984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 10:56:38.627 info 33984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 10:56:38.629 info 33984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 10:56:38.629 info 33984 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 10:56:38.638 info 33984 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 10:56:38.729 info 33984 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.578 seconds (JVM running for 59.838)
+2024-11-14 10:56:38.732 info 33984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 10:57:15.432 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-14 10:57:15.442 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 10:57:15.444 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 10:57:15.448 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 10:57:15.449 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-14 10:57:15.451 info 33984 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-14 10:57:18.117 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 10204 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 10:57:18.118 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 10:57:18.159 info 10204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-14 10:57:18.160 info 10204 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-14 10:57:18.884 info 10204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 10:57:18.930 info 10204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-11-14 10:57:19.489 info 10204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 10:57:19.497 info 10204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 10:57:19.498 info 10204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 10:57:19.597 info 10204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 10:57:19.597 info 10204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2024-11-14 10:57:19.741 info 10204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 10:57:19.797 info 10204 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-14 10:57:19.930 info 10204 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-14 10:57:20.025 info 10204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-14 10:57:20.242 info 10204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-14 10:57:20.262 info 10204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 10:57:21.090 info 10204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 10:57:21.100 info 10204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 10:57:21.525 info 10204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 10:57:21.959 info 10204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 10:57:22.092 info 10204 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62a4c1c8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5495756, org.springframework.security.web.context.SecurityContextPersistenceFilter@8c9bab9, org.springframework.security.web.header.HeaderWriterFilter@757cb0e3, org.springframework.web.filter.CorsFilter@6a291411, org.springframework.security.web.authentication.logout.LogoutFilter@61dc3e29, com.wallet.jwt.JwtRequestFilter@3348d0a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e26c192, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1460fddd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60efd946, org.springframework.security.web.session.SessionManagementFilter@1428b644, org.springframework.security.web.access.ExceptionTranslationFilter@4e94d90e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d18f8dd]
+2024-11-14 10:57:22.188 info 10204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 10:57:22.330 info 10204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 10:57:22.331 info 10204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 10:57:22.350 info 10204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 10:57:22.366 info 10204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 10:57:22.494 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 4.699 seconds (JVM running for 5.482)
+2024-11-14 11:10:06.297 info 10204 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14 11:10:06.298 info 10204 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14 11:10:06.300 info 10204 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-14 11:10:06.644 info 10204 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : ErrorDetails class
+2024-11-14 11:10:06.662 info 10204 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : timestamp
+2024-11-14 11:10:06.664 info 10204 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : INVALID_CREDENTIALS
+2024-11-14 11:10:06.664 info 10204 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : uri=/authenticate
+2024-11-14 11:10:06.665 info 10204 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.Exception: INVALID_CREDENTIALS]
+2024-11-14 11:10:22.083 info 10204 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 11:10:22.099 info 10204 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:10:22.100 info 10204 --- [Thread-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-14 11:10:22.104 info 10204 --- [Thread-4] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:10:22.109 info 10204 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:10:22.112 info 10204 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-14 11:10:22.115 info 10204 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-14 11:10:22.193 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 10204 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:10:22.193 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:10:22.455 info 10204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:10:22.473 info 10204 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:10:22.591 info 10204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:10:22.592 info 10204 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:10:22.592 info 10204 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:10:22.621 info 10204 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:10:22.621 info 10204 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 425 ms
+2024-11-14 11:10:22.664 info 10204 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:10:22.669 info 10204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-14 11:10:22.760 info 10204 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-14 11:10:22.760 info 10204 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:10:22.898 info 10204 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:10:22.898 info 10204 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:10:23.033 info 10204 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:10:23.253 info 10204 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:10:23.356 info 10204 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@51e9b9ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18895edf, org.springframework.security.web.context.SecurityContextPersistenceFilter@23010ce, org.springframework.security.web.header.HeaderWriterFilter@69b545a7, org.springframework.web.filter.CorsFilter@14a7a21e, org.springframework.security.web.authentication.logout.LogoutFilter@53256b8d, com.wallet.jwt.JwtRequestFilter@2de8ac22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ebd2a1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d66d013, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@81bc29, org.springframework.security.web.session.SessionManagementFilter@7ef9335, org.springframework.security.web.access.ExceptionTranslationFilter@216bb34d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2286d69d]
+2024-11-14 11:10:23.399 info 10204 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:10:23.479 info 10204 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:10:23.480 info 10204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:10:23.481 info 10204 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:10:23.485 info 10204 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:10:23.549 info 10204 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.388 seconds (JVM running for 786.553)
+2024-11-14 11:10:23.552 info 10204 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 11:10:48.063 info 10204 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14 11:10:48.064 info 10204 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14 11:10:48.064 info 10204 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-11-14 11:10:52.863 info 10204 --- [http-nio-8081-exec-3] com.wallet.exceptions.ErrorDetails       : ErrorDetails class
+2024-11-14 11:10:52.864 info 10204 --- [http-nio-8081-exec-3] com.wallet.exceptions.ErrorDetails       : timestamp
+2024-11-14 11:10:52.865 info 10204 --- [http-nio-8081-exec-3] com.wallet.exceptions.ErrorDetails       : INVALID_CREDENTIALS
+2024-11-14 11:10:52.865 info 10204 --- [http-nio-8081-exec-3] com.wallet.exceptions.ErrorDetails       : uri=/authenticate
+2024-11-14 11:10:52.866 info 10204 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.Exception: INVALID_CREDENTIALS]
+2024-11-14 11:18:05.161 info 10204 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+io.jsonwebtoken.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:354) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.wallet.jwt.JwtUtil.getAllClaimsFromToken(JwtUtil.java:30) ~[classes/:na]
+	at com.wallet.jwt.JwtUtil.getClaimFromToken(JwtUtil.java:25) ~[classes/:na]
+	at com.wallet.jwt.JwtUtil.getUsernameFromToken(JwtUtil.java:21) ~[classes/:na]
+	at com.wallet.jwt.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:39) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186) ~[spring-security-web-5.7.8.jar:5.7.8]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2024-11-14 11:33:24.096 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-11-14 11:33:24.109 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:33:24.109 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-14 11:33:24.111 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:33:24.115 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:33:24.115 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-14 11:33:24.123 info 10204 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-14 11:33:27.498 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 15288 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:33:27.500 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:33:27.555 info 15288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-14 11:33:27.555 info 15288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-14 11:33:28.570 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:33:28.630 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:33:29.315 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:33:29.324 info 15288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:33:29.325 info 15288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:33:29.444 info 15288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:33:29.444 info 15288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1888 ms
+2024-11-14 11:33:29.621 info 15288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:33:29.682 info 15288 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-11-14 11:33:29.841 info 15288 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-14 11:33:29.944 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-14 11:33:30.161 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-14 11:33:30.183 info 15288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:33:31.205 info 15288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:33:31.214 info 15288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:33:31.674 info 15288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:33:32.288 info 15288 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:33:32.461 info 15288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e1628c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a2e5947, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fbd7e8, org.springframework.security.web.header.HeaderWriterFilter@544da4a9, org.springframework.web.filter.CorsFilter@4e920cca, org.springframework.security.web.authentication.logout.LogoutFilter@effcd2f, com.wallet.jwt.JwtRequestFilter@2530c1e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4720d381, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@470f85dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19522cfa, org.springframework.security.web.session.SessionManagementFilter@255e9791, org.springframework.security.web.access.ExceptionTranslationFilter@5417aa5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41ef84e1]
+2024-11-14 11:33:32.578 info 15288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:33:32.743 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:33:32.745 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:33:32.768 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:33:32.788 info 15288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:33:32.957 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 5.904 seconds (JVM running for 7.007)
+2024-11-14 11:35:12.625 info 15288 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 11:35:12.642 info 15288 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:35:12.645 info 15288 --- [Thread-4] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:35:12.652 info 15288 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:35:12.654 info 15288 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-14 11:35:12.669 info 15288 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-14 11:35:12.750 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 15288 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:35:12.750 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:35:12.994 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:35:13.013 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:35:13.111 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:35:13.112 info 15288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:35:13.112 info 15288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:35:13.149 info 15288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:35:13.149 info 15288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 397 ms
+2024-11-14 11:35:13.191 info 15288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:35:13.196 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-11-14 11:35:13.285 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-11-14 11:35:13.286 info 15288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:35:13.383 info 15288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:35:13.384 info 15288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:35:13.511 info 15288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:35:13.699 info 15288 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:35:13.813 info 15288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14c6776a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d1eb1a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@64f6c48f, org.springframework.security.web.header.HeaderWriterFilter@1996f799, org.springframework.web.filter.CorsFilter@2a189833, org.springframework.security.web.authentication.logout.LogoutFilter@2cd3ada5, com.wallet.jwt.JwtRequestFilter@5322beb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25ef9ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c5aec57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32226b80, org.springframework.security.web.session.SessionManagementFilter@16a88e6e, org.springframework.security.web.access.ExceptionTranslationFilter@44345f54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3036434]
+2024-11-14 11:35:13.849 info 15288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:35:13.924 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:35:13.925 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:35:13.927 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:35:13.932 info 15288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:35:13.991 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.273 seconds (JVM running for 108.04)
+2024-11-14 11:35:13.994 info 15288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 11:35:49.766 info 15288 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 11:35:49.776 info 15288 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:35:49.778 info 15288 --- [Thread-7] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:35:49.781 info 15288 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:35:49.781 info 15288 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-11-14 11:35:49.786 info 15288 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-11-14 11:35:49.879 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 15288 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:35:49.880 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:35:50.126 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:35:50.143 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:35:50.239 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:35:50.240 info 15288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:35:50.240 info 15288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:35:50.267 info 15288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:35:50.267 info 15288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 384 ms
+2024-11-14 11:35:50.313 info 15288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:35:50.317 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-11-14 11:35:50.405 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-11-14 11:35:50.406 info 15288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:35:50.498 info 15288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:35:50.499 info 15288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:35:50.623 info 15288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:35:50.823 info 15288 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:35:50.931 info 15288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e09da19, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28d92d50, org.springframework.security.web.context.SecurityContextPersistenceFilter@32b1d04b, org.springframework.security.web.header.HeaderWriterFilter@6048e015, org.springframework.web.filter.CorsFilter@4dcc55d5, org.springframework.security.web.authentication.logout.LogoutFilter@10d7861a, com.wallet.jwt.JwtRequestFilter@6ccbafdc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6bd376e6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c3c6bc1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6505209b, org.springframework.security.web.session.SessionManagementFilter@70f20eda, org.springframework.security.web.access.ExceptionTranslationFilter@59600b70, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e8acd6a]
+2024-11-14 11:35:50.966 info 15288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:35:51.035 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:35:51.035 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:35:51.036 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:35:51.041 info 15288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:35:51.101 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.261 seconds (JVM running for 145.151)
+2024-11-14 11:35:51.103 info 15288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 11:36:26.092 info 15288 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 11:36:26.106 info 15288 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:36:26.108 info 15288 --- [Thread-11] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-3 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:36:26.111 info 15288 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:36:26.111 info 15288 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-11-14 11:36:26.114 info 15288 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-11-14 11:36:26.209 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 15288 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:36:26.211 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:36:26.539 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:36:26.561 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:36:26.692 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:36:26.693 info 15288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:36:26.693 info 15288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:36:26.721 info 15288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:36:26.721 info 15288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 508 ms
+2024-11-14 11:36:26.758 info 15288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:36:26.763 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-11-14 11:36:26.839 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-11-14 11:36:26.839 info 15288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:36:26.927 info 15288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:36:26.928 info 15288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:36:27.058 info 15288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:36:27.268 info 15288 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:36:27.349 info 15288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40b47ae7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@699603e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@1406c76d, org.springframework.security.web.header.HeaderWriterFilter@4f5545e6, org.springframework.web.filter.CorsFilter@76da81ef, org.springframework.security.web.authentication.logout.LogoutFilter@14453771, com.wallet.jwt.JwtRequestFilter@6311296d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c9990db, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79868cdb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78e999dd, org.springframework.security.web.session.SessionManagementFilter@1a0ab320, org.springframework.security.web.access.ExceptionTranslationFilter@2f04e274, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37e72b52]
+2024-11-14 11:36:27.381 info 15288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:36:27.441 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:36:27.442 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:36:27.443 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:36:27.448 info 15288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:36:27.503 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.329 seconds (JVM running for 181.553)
+2024-11-14 11:36:27.505 info 15288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 11:36:46.385 info 15288 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14 11:36:46.386 info 15288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14 11:36:46.387 info 15288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-14 11:36:46.589 info 15288 --- [http-nio-8081-exec-2] c.w.service.UserDetailsServiceImple      : User Already Present in the databse
+2024-11-14 11:36:46.591 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : ErrorDetails class
+2024-11-14 11:36:46.614 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : timestamp
+2024-11-14 11:36:46.616 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : User Already exist
+2024-11-14 11:36:46.616 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : uri=/api/register
+2024-11-14 11:36:46.619 info 15288 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.Exception: User Already exist]
+2024-11-14 11:38:04.945 info 15288 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-11-14 11:38:05.055 info 15288 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-14 11:38:05.055 info 15288 --- [Thread-15] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-11-14 11:38:05.082 info 15288 --- [Thread-15] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-4 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2024-11-14 11:38:05.090 info 15288 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:38:05.091 info 15288 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-11-14 11:38:05.114 info 15288 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-11-14 11:38:05.270 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Starting OnlineWalletApplication using Java 17.0.1 on inlen8520027115 with PID 15288 (C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet\target\classes started by dhiragep in C:\Users\DHIRAGEP\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Springboot\Sprint1-Project\OnlineWallet)
+2024-11-14 11:38:05.271 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-11-14 11:38:05.577 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-14 11:38:05.596 info 15288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2024-11-14 11:38:05.703 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-11-14 11:38:05.704 info 15288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-14 11:38:05.704 info 15288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-11-14 11:38:05.740 info 15288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-14 11:38:05.740 info 15288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+2024-11-14 11:38:05.794 info 15288 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-14 11:38:05.799 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-11-14 11:38:05.902 info 15288 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-11-14 11:38:05.902 info 15288 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2024-11-14 11:38:06.008 info 15288 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-14 11:38:06.009 info 15288 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-14 11:38:06.147 info 15288 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-14 11:38:06.411 info 15288 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2024-11-14 11:38:06.579 info 15288 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2be16ba3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bcc1a60, org.springframework.security.web.context.SecurityContextPersistenceFilter@76e00ff3, org.springframework.security.web.header.HeaderWriterFilter@3d7d688, org.springframework.web.filter.CorsFilter@3e5729ca, org.springframework.security.web.authentication.logout.LogoutFilter@15a052ee, com.wallet.jwt.JwtRequestFilter@249a9e95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51790f42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ca7f073, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@653a3951, org.springframework.security.web.session.SessionManagementFilter@16b32a4e, org.springframework.security.web.access.ExceptionTranslationFilter@457c484d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@32bd3160]
+2024-11-14 11:38:06.652 info 15288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-14 11:38:06.746 info 15288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-11-14 11:38:06.746 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2024-11-14 11:38:06.747 info 15288 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2024-11-14 11:38:06.757 info 15288 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2024-11-14 11:38:06.821 info 15288 --- [restartedMain] com.wallet.OnlineWalletApplication       : Started OnlineWalletApplication in 1.637 seconds (JVM running for 280.871)
+2024-11-14 11:38:06.824 info 15288 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-11-14 11:38:15.320 info 15288 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-14 11:38:15.320 info 15288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-14 11:38:15.322 info 15288 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-14 11:38:15.345 info 15288 --- [http-nio-8081-exec-2] c.w.service.UserDetailsServiceImple      : User Already Present in the databse
+2024-11-14 11:38:15.346 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : ErrorDetails class
+2024-11-14 11:38:15.348 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : timestamp
+2024-11-14 11:38:15.349 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : User Already exist
+2024-11-14 11:38:15.349 info 15288 --- [http-nio-8081-exec-2] com.wallet.exceptions.ErrorDetails       : uri=/api/register
+2024-11-14 11:38:15.350 info 15288 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.Exception: User Already exist]
+2024-11-14 11:38:53.987 info 15288 --- [http-nio-8081-exec-4] c.w.service.UserDetailsServiceImple      : Registering the user in the application

@@ -37,7 +37,7 @@ public class GlobalExceptionHandler {
 		errors.forEach(a -> {
 			map.put(a.getField(), a.getDefaultMessage());
 		});
-		return new ResponseEntity<>(map, HttpStatus.INTERNAL_SERVER_ERROR);
+		return new ResponseEntity<>(map, HttpStatus.BAD_REQUEST);
 	}
 
 	@ExceptionHandler(ConstraintViolationException.class)

@@ -4,7 +4,10 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.wallet.entity.TransactionDetails;
@@ -23,16 +26,23 @@ public class UserDetailsServiceImple implements UserDetailsService {
 	@Autowired
 	private TransactionsRepo transactionsRepo;
 
+	@Autowired
+	private BCryptPasswordEncoder bCryptPasswordEncoder;
+
+	private final static Logger logger = LoggerFactory.getLogger(UserDetailsServiceImple.class);
+
 	@Override
 	public UserDetails registerUser(UserDetails details) throws Exception {
 
 		UserDetails obj = detetailsRepo.getUserByEmail(details.getEmailId());
 		if (obj != null) {
+			logger.error("User Already Present in the databse");
 			throw new Exception("User Already exist");
 		}
 
 		details.setAccountNumber((long) Math.floor(Math.random() * 9_000_000_000L) + 1_000_000_000L);
-
+		details.setPassword(bCryptPasswordEncoder.encode(details.getPassword()));
+		logger.info("Registering the user in the application");
 		return detetailsRepo.save(details);
 	}
 
@@ -40,8 +50,9 @@ public class UserDetailsServiceImple implements UserDetailsService {
 	public UserDetails autheticateUser(String userName, String password) throws ResourceNotFoundException {
 
 		UserDetails u = detetailsRepo.getUserByUserName(userName);
-		System.out.println(u);
+
 		if (u.getFirstName().equalsIgnoreCase(userName) && u.getPassword().equalsIgnoreCase(password)) {
+			logger.info("Authentication is successfull");
 			return u;
 		}
 		throw new ResourceNotFoundException("Invalid credentails");
